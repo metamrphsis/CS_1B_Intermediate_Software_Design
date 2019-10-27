@@ -1,0 +1,37 @@
+_________________OUTPUT:_________________
+ -> alice, $9428.62, years served  7
+ -> sam, $7245.74, years served  5
+ -> bob, $1236.40, years served  12
+ -> dan, $3149.61, years served  12
+ -> ryan, $8419.15, years served  13
+ -> ryan, $8979.14, years served  4
+ -> janice, $5020.01, years served  14
+ -> tom, $1303.39, years served  11
+ -> ryan, $9487.64, years served  5
+null
+
+Longest serving employee: janice, $5020.01, years served  14
+
+Highest paid employee: ryan, $9487.64, years served  5
+
+
+Test Cases:
+
+ -> Irene, $8103.30, years served  26
+ -> Irene, $1233.58, years served  21
+ -> Emma, $6467.76, years served  16
+ -> Emma, $2474.73, years served  5
+ -> Hugo, $9758.69, years served  1
+ -> Sela, $6676.67, years served  22
+ -> Sela, $6315.91, years served  30
+null
+
+Test Case 1:
+The longest serving employee : Sela, $6315.91, years served  30
+
+The highest paid employee : Hugo, $9758.69, years served  1
+
+Test Case 2:
+The longest serving employee : Sela, $6315.91, years served  30
+
+The highest paid employee : Hugo, $9758.69, years served  1

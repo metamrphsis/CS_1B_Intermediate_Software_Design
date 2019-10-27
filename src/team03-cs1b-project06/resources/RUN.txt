@@ -1,0 +1,291 @@
+-----------------------------------------------------
+Test 1:
+-----------------------------------------------------
+Testing TestGenericList
+Test file: resources/childrenEnrolled_invalid.csv
+
+NOTES: Testing with a file with invalid data
+        Input '0'
+-----------------------------------------------------
+Select an indicator to parse. Enter a number between 0 to 6.
+Available indicators are:
+0. Invalid data (for debugging)
+1. GDP per Capita (short for debugging)
+2. School Enrollment
+3. GDP per Capita
+4. School Enrollment
+5. World Female Population (short for debugging
+6. World Female Population (short for debugging
+0
+The selected indicator is INVALID
+Invalid file format Invalid file format at resources/childrenEnrolled_invalid.csv, Expecting number of countries at line number 4
+
+Process finished with exit code 0
+
+-----------------------------------------------------
+-----------------------------------------------------
+
+-----------------------------------------------------
+Test 2:
+-----------------------------------------------------
+Testing TestGenericList
+Test file: resources/gdpPerCapita_short_12years.csv
+
+NOTES: Testing with a file with GDP_PER_CAPITA indicator
+        Input '1'
+        - Searching for invalid country
+        - Requesting invalid period
+            - requested end year past data range
+-----------------------------------------------------
+Select an indicator to parse. Enter a number between 0 to 6.
+Available indicators are:
+0. Invalid data (for debugging)
+1. GDP per Capita (short for debugging)
+2. School Enrollment (short for debugging)
+3. GDP per Capita
+4. School Enrollment
+5. World Female Population (short for debugging
+6. World Female Population
+1
+The selected indicator is GDP_PER_CAPITA
+
+		Given the resources/gdpPerCapita_short_12years.csv file, the output is:
+			GDP per capita (current US$) updated at 8/28/18
+
+Parsing filename resources/gdpPerCapita_short_12years.csv
+
+Country names:
+ Argentina, Canada, China, Egypt, Arab Rep., India, Nepal, Syrian Arab Republic, United States,
+
+How many countries do you want to add to the list?
+5
+Adding country with name India to the end of the list.
+Adding country with name Canada to the end of the list.
+Adding country with name Argentina to the end of the list.
+Adding country with name Argentina to the end of the list.
+Adding country with name Canada to the end of the list.
+India                           [792.03]           [1018.17]            [991.48]           [1090.32]           [1345.77]           [1461.67]           [1446.99]           [1452.20]           [1576.00]           [1606.04]           [1717.47]           [1939.61]
+Canada                        [40386.70]          [44544.53]          [46596.34]          [40773.45]          [47447.48]          [52082.21]          [52496.69]          [52418.32]          [50633.21]          [43525.37]          [42348.95]          [45032.12]
+Argentina                      [5878.76]           [7193.62]           [8953.36]           [8161.31]          [10276.26]          [12726.91]          [12969.71]          [12976.64]          [12245.26]          [13698.29]          [12654.36]          [14401.97]
+Argentina                      [5878.76]           [7193.62]           [8953.36]           [8161.31]          [10276.26]          [12726.91]          [12969.71]          [12976.64]          [12245.26]          [13698.29]          [12654.36]          [14401.97]
+Canada                        [40386.70]          [44544.53]          [46596.34]          [40773.45]          [47447.48]          [52082.21]          [52496.69]          [52418.32]          [50633.21]          [43525.37]          [42348.95]          [45032.12]
+
+Done with creating random linked list of countries.
+
+
+What is the name of the country you want to search for?
+China
+Country China not found.
+Done with searching for a country name.
+
+
+What is the index of the country you want data on? (Enter a index between 0 and 4)
+Available countries are:
+India                           [792.03]           [1018.17]            [991.48]           [1090.32]           [1345.77]           [1461.67]           [1446.99]           [1452.20]           [1576.00]           [1606.04]           [1717.47]           [1939.61]
+Canada                        [40386.70]          [44544.53]          [46596.34]          [40773.45]          [47447.48]          [52082.21]          [52496.69]          [52418.32]          [50633.21]          [43525.37]          [42348.95]          [45032.12]
+Argentina                      [5878.76]           [7193.62]           [8953.36]           [8161.31]          [10276.26]          [12726.91]          [12969.71]          [12976.64]          [12245.26]          [13698.29]          [12654.36]          [14401.97]
+Argentina                      [5878.76]           [7193.62]           [8953.36]           [8161.31]          [10276.26]          [12726.91]          [12969.71]          [12976.64]          [12245.26]          [13698.29]          [12654.36]          [14401.97]
+Canada                        [40386.70]          [44544.53]          [46596.34]          [40773.45]          [47447.48]          [52082.21]          [52496.69]          [52418.32]          [50633.21]          [43525.37]          [42348.95]          [45032.12]
+
+1
+
+What period are you interested in? Available years are from 2006 to 2017.
+Enter [starting year],[end year].
+2010,2030
+Invalid request of start and end year 2010, 2030. Using valid subperiod for  is 2010 to 2017
+              Canada           [47447.48]             [52082.21]             [52496.69]             [52418.32]             [50633.21]             [43525.37]             [42348.95]             [45032.12]
+
+Done with TestGenericList.
+
+
+Process finished with exit code 0
+
+-----------------------------------------------------
+-----------------------------------------------------
+
+-----------------------------------------------------
+Test 3:
+-----------------------------------------------------
+Testing TestGenericList
+Test file: resources/childrenEnrolledInPrimary_short_12years.csv & resources/childrenEnrolledInSecondary_short_12years.csv
+
+NOTES: Testing with a file with Primary and Secondary indicators
+        Input '2'
+        - Requesting invalid index
+-----------------------------------------------------
+Select an indicator to parse. Enter a number between 0 to 6.
+Available indicators are:
+0. Invalid data (for debugging)
+1. GDP per Capita (short for debugging)
+2. School Enrollment (short for debugging)
+3. GDP per Capita
+4. School Enrollment
+5. World Female Population (short for debugging
+6. World Female Population (short for debugging
+2
+The selected indicator is SCHOOL_ENROLLMENT_PRIMARY
+
+		Given the resources/childrenEnrolledInPrimary_short_12years.csv file, the output is:
+			School Enrollment In Primary (% net) updated at 7/25/18
+
+Parsing filename resources/childrenEnrolledInPrimary_short_12years.csv
+
+		Given the resources/childrenEnrolledInSecondary_short_12years.csv file, the output is:
+			School Enrollment In Secondary (% net) updated at 6/28/18
+
+Parsing filename resources/childrenEnrolledInSecondary_short_12years.csv
+
+Country names:
+ Afghanistan, Canada, China, Egypt, Arab Rep., India, Nepal, Syrian Arab Republic, United States,
+
+How many countries do you want to add to the list?
+5
+Adding country with name India to the end of the list.
+Adding country with name China to the end of the list.
+Adding country with name China to the end of the list.
+Adding country with name Afghanistan to the end of the list.
+Adding country with name Canada to the end of the list.
+India                         [N/A, N/A]        [91.30, N/A]        [91.02, N/A]        [90.77, N/A]        [91.04, N/A]        [90.42, N/A]        [91.58, N/A]      [92.25, 61.77]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]
+China                         [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]
+China                         [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]
+Afghanistan                   [N/A, N/A]        [N/A, 27.38]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]        [N/A, 47.50]        [N/A, 47.31]        [N/A, 47.37]          [N/A, N/A]        [N/A, 49.56]
+Canada                        [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]      [99.47, 92.31]      [99.45, 91.77]      [99.40, 91.35]      [99.60, 92.86]      [99.96, 99.65]          [N/A, N/A]
+
+Done with creating random linked list of countries.
+
+
+What is the name of the country you want to search for?
+India
+Country India found:
+India                         [N/A, N/A]        [91.30, N/A]        [91.02, N/A]        [90.77, N/A]        [91.04, N/A]        [90.42, N/A]        [91.58, N/A]      [92.25, 61.77]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]
+
+Done with searching for a country name.
+
+
+What is the index of the country you want data on? (Enter a index between 0 and 4)
+Available countries are:
+India                         [N/A, N/A]        [91.30, N/A]        [91.02, N/A]        [90.77, N/A]        [91.04, N/A]        [90.42, N/A]        [91.58, N/A]      [92.25, 61.77]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]
+China                         [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]
+China                         [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]
+Afghanistan                   [N/A, N/A]        [N/A, 27.38]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]        [N/A, 47.50]        [N/A, 47.31]        [N/A, 47.37]          [N/A, N/A]        [N/A, 49.56]
+Canada                        [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]          [N/A, N/A]      [99.47, 92.31]      [99.45, 91.77]      [99.40, 91.35]      [99.60, 92.86]      [99.96, 99.65]          [N/A, N/A]
+
+7
+ERROR: Requested index 7 is out of range. Valid element positions are (index >= 0 && index < 5).
+Done with TestGenericList.
+
+
+Process finished with exit code 0
+
+-----------------------------------------------------
+-----------------------------------------------------
+
+-----------------------------------------------------
+Test 4: (EXTRA CREDIT PORTION)
+-----------------------------------------------------
+Testing TestGenericList
+Test file: resources/female_population_short.csv file
+
+NOTES: Testing with a file with Female Population indicator
+        - Requested out of range start date
+-----------------------------------------------------
+Select an indicator to parse. Enter a number between 0 to 6.
+Available indicators are:
+0. Invalid data (for debugging)
+1. GDP per Capita (short for debugging)
+2. School Enrollment (short for debugging)
+3. GDP per Capita
+4. School Enrollment
+5. World Female Population (short for debugging
+6. World Female Population
+5
+The selected indicator is FEMALE_POPULATION
+
+		Given the resources/female_population_short.csv file, the output is:
+			World Female Population updated at 2019-01-30
+
+Parsing filename resources/female_population_short.csv
+
+Country names:
+ Afghanistan, Argentina, Brazil, Canada, China, Egypt, Arab Rep., Spain, India, Nepal, Portugal, Syrian Arab Republic, United States,
+
+How many countries do you want to add to the list?
+4
+Adding country with name Nepal to the end of the list.
+Adding country with name China to the end of the list.
+Adding country with name United States to the end of the list.
+Adding country with name India to the end of the list.
+Nepal                            [50.51]             [50.69]             [50.88]             [51.07]             [51.22]             [51.33]             [51.40]             [51.45]             [51.47]             [51.48]             [51.48]             [51.46]
+China                            [48.57]             [48.56]             [48.55]             [48.54]             [48.53]             [48.52]             [48.51]             [48.50]             [48.49]             [48.48]             [48.47]             [48.47]
+United States                    [50.64]             [50.63]             [50.63]             [50.62]             [50.61]             [50.59]             [50.58]             [50.56]             [50.55]             [50.53]             [50.52]             [50.50]
+India                            [48.16]             [48.15]             [48.14]             [48.13]             [48.13]             [48.13]             [48.14]             [48.15]             [48.16]             [48.16]             [48.17]             [48.18]
+
+Done with creating random linked list of countries.
+
+
+What is the name of the country you want to search for?
+China
+Country China found:
+China                            [48.57]             [48.56]             [48.55]             [48.54]             [48.53]             [48.52]             [48.51]             [48.50]             [48.49]             [48.48]             [48.47]             [48.47]
+
+Done with searching for a country name.
+
+
+What is the index of the country you want data on? (Enter a index between 0 and 3)
+Available countries are:
+Nepal                            [50.51]             [50.69]             [50.88]             [51.07]             [51.22]             [51.33]             [51.40]             [51.45]             [51.47]             [51.48]             [51.48]             [51.46]
+China                            [48.57]             [48.56]             [48.55]             [48.54]             [48.53]             [48.52]             [48.51]             [48.50]             [48.49]             [48.48]             [48.47]             [48.47]
+United States                    [50.64]             [50.63]             [50.63]             [50.62]             [50.61]             [50.59]             [50.58]             [50.56]             [50.55]             [50.53]             [50.52]             [50.50]
+India                            [48.16]             [48.15]             [48.14]             [48.13]             [48.13]             [48.13]             [48.14]             [48.15]             [48.16]             [48.16]             [48.17]             [48.18]
+
+3
+
+What period are you interested in? Available years are from 2006 to 2017.
+Enter [starting year],[end year].
+1990,2007
+Invalid request of start and end year 1990, 2007. Using valid subperiod for  is 2006 to 2007
+               India              [48.16]                [48.15]
+
+Done with TestGenericList.
+
+
+Process finished with exit code 0
+
+-----------------------------------------------------
+-----------------------------------------------------
+
+-----------------------------------------------------
+Test 5:
+-----------------------------------------------------
+Testing ChartGraph
+Test file: resources/gdpPerCapita.csv
+
+NOTES: Testing file with GDP per capita data
+        Input '1'
+-----------------------------------------------------
+Select an indicator to parse. Enter a number between 1 to 4.
+Available indicators are:
+1. GDP per Capita
+2. School Enrollment
+3. World Female Population
+1
+
+Parsing filename resources/gdpPerCapita.csv
+
+		Given the resources/gdpPerCapita.csv file, the output is:
+			GDP per capita (current US$) updated at 8/28/18
+How many countries do you want to add to the list?
+5
+Andorra                            [N/A]               [N/A]               [N/A]               [N/A]               [N/A]               [N/A]               [N/A]               [N/A]               [N/A]               [N/A]           [3238.56]           [3498.17]           [4217.17]           [5342.17]           [6319.74]           [7169.10]           [7152.38]           [7751.37]           [9129.71]          [11820.85]          [12377.41]          [10372.23]           [9610.27]           [8022.65]           [7728.91]           [7774.39]          [10361.82]          [12616.17]          [14304.36]          [15166.44]          [18878.51]          [19532.54]          [20547.71]          [16516.47]          [16234.81]          [18461.06]          [19017.17]          [18353.06]          [18894.52]          [19261.71]          [21936.53]          [22228.85]          [24741.49]          [32776.44]          [38503.48]          [41282.02]          [43748.77]          [48582.81]          [47785.66]          [43339.38]          [39736.35]          [41098.77]          [38391.08]          [40619.71]          [42294.99]          [36038.27]          [37231.82]          [39146.55]
+Portugal                        [360.50]            [382.73]            [407.85]            [432.51]            [468.78]            [520.91]            [575.01]            [646.82]            [719.08]            [795.76]            [934.17]           [1064.64]           [1302.39]           [1748.16]           [2000.61]           [2127.85]           [2173.50]           [2267.59]           [2457.55]           [2755.90]           [3368.70]           [3246.29]           [3080.25]           [2735.76]           [2523.00]           [2705.46]           [3862.33]           [4804.34]           [5624.25]           [6056.98]           [7885.39]           [8959.87]          [10811.63]           [9535.59]           [9978.30]          [11782.52]          [12185.06]          [11578.44]          [12202.69]          [12474.82]          [11502.40]          [11729.15]          [12882.29]          [15772.73]          [18045.59]          [18784.95]          [19821.44]          [22780.06]          [24815.61]          [23063.97]          [22538.65]          [23196.18]          [20577.40]          [21618.74]          [22077.54]          [19252.63]          [19871.72]          [21136.30]
+Kuwait                             [N/A]               [N/A]               [N/A]               [N/A]               [N/A]           [4429.17]           [4556.46]           [4217.38]           [4194.57]           [4007.26]           [3848.57]           [4843.55]           [5208.50]           [5952.86]          [13478.77]          [11731.55]          [12056.15]          [12217.22]          [12626.99]          [19040.04]          [20868.74]          [17364.40]          [14277.63]          [13203.17]          [13103.55]          [12330.47]           [9750.90]          [11512.05]          [10148.92]          [11594.14]           [8776.74]           [5407.97]               [N/A]               [N/A]               [N/A]          [16882.42]          [19300.86]          [17696.14]          [14126.88]          [15391.35]          [18389.38]          [16540.97]          [17789.42]          [22071.57]          [26921.08]          [35490.26]          [42717.56]          [45793.98]          [55572.00]          [37567.30]          [38497.62]          [48268.59]          [51264.07]          [48399.81]          [42996.32]          [29109.07]          [27368.29]          [29040.36]
+Portugal                        [360.50]            [382.73]            [407.85]            [432.51]            [468.78]            [520.91]            [575.01]            [646.82]            [719.08]            [795.76]            [934.17]           [1064.64]           [1302.39]           [1748.16]           [2000.61]           [2127.85]           [2173.50]           [2267.59]           [2457.55]           [2755.90]           [3368.70]           [3246.29]           [3080.25]           [2735.76]           [2523.00]           [2705.46]           [3862.33]           [4804.34]           [5624.25]           [6056.98]           [7885.39]           [8959.87]          [10811.63]           [9535.59]           [9978.30]          [11782.52]          [12185.06]          [11578.44]          [12202.69]          [12474.82]          [11502.40]          [11729.15]          [12882.29]          [15772.73]          [18045.59]          [18784.95]          [19821.44]          [22780.06]          [24815.61]          [23063.97]          [22538.65]          [23196.18]          [20577.40]          [21618.74]          [22077.54]          [19252.63]          [19871.72]          [21136.30]
+IDA blend                       [101.73]            [106.17]            [110.77]            [114.31]            [121.88]            [129.33]            [136.86]            [134.21]            [139.00]            [154.52]            [207.16]            [186.55]            [203.03]            [210.10]            [296.83]            [331.85]            [391.93]            [398.74]            [419.08]            [500.23]            [624.20]            [623.74]            [569.98]            [460.37]            [419.26]            [406.71]            [383.74]            [411.94]            [428.76]            [426.16]            [440.28]            [441.08]            [434.41]            [390.80]            [380.79]            [438.03]            [476.03]            [470.13]            [439.25]            [447.24]            [486.80]            [459.65]            [488.63]            [545.16]            [645.53]            [744.22]            [921.02]           [1029.94]           [1201.44]           [1090.80]           [1568.26]           [1757.36]           [1888.93]           [2002.51]           [2120.08]           [1935.32]           [1773.04]           [1717.26]
+
+Done with creating random linked list of countries.
+
+Image:
+resources/ChartView_GDPData.png
+
+-----------------------------------------------------
+-----------------------------------------------------

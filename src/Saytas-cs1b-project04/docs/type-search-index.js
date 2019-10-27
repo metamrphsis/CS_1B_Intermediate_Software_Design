@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"csv","l":"CSVParser"},{"p":"csv","l":"EnrollmentData"},{"p":"csv","l":"GDPIndicator"},{"p":"csv","l":"Indicator"},{"p":"csv","l":"IndicatorType"},{"p":"csv","l":"InvalidFileFormatException"},{"p":"csv","l":"SchoolEnrollmentIndicator"},{"p":"csv","l":"TestIndicators"}]

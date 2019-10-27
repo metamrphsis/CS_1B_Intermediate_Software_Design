@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"<Unnamed>","l":"Company"},{"p":"<Unnamed>","l":"Employee"},{"p":"<Unnamed>","l":"EmployeeSalaryComparator"},{"p":"<Unnamed>","l":"EmployeeYearsComparator"},{"p":"<Unnamed>","l":"MyLinkedList"},{"p":"<Unnamed>","l":"MyLinkedList.MyListIterator"},{"p":"<Unnamed>","l":"MyLinkedList.Node"}]
